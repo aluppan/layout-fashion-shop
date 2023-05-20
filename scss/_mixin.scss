@@ -1,0 +1,49 @@
+@mixin font($size, $height, $weight: 400, $style: normal) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+//breakpoints
+@mixin xl-1366 {
+    @media (max-width: (1366px)) {
+        @content;
+    }
+}
+
+@mixin lg-1024 {
+    @media (max-width: (1024px)) {
+        @content;
+    }
+}
+
+@mixin lg-992 {
+    @media (max-width: (992px)) {
+        @content;
+    }
+}
+
+@mixin md-768 {
+    @media (max-width: (768px)) {
+        @content;
+    }
+}
+
+@mixin sm-670 {
+    @media (max-width: (670px)) {
+        @content;
+    }
+}
+
+@mixin xs-576 {
+    @media (max-width: (576px)) {
+        @content;
+    }
+}
+
+@mixin xs-320 {
+    @media (max-width: (320px)) {
+        @content;
+    }
+}
