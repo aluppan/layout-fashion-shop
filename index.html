@@ -6,13 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Shop</title>
+    <link rel="preload" href="fonts/Lato-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Lato-Black.woff2" as="font" type="font/woff2" crossorigin>
     <!-- style -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container header__container">
+            <!-- <a href="#" class="logo">
+                <img loading="lazy" src="img/logo.svg" class="image" width="228" height="48" alt="Логотип">
+            </a>
+            <a class="header__logo" href="">
+                <img class="header__logo-img" src="../img/header/logo.svg" alt="Логотип">
+            </a> -->
+            <div class="header__block-left">
+                <a class="header__logo" href="">
+                    <img class="header__logo-img" src="img/logo.svg" alt="Логотип">
+                </a>
+                <button class="header__search">
+                    <img src="img/search.svg" alt="Поиск">
+                </button>
+            </div>
+            <div class="header__block-right">
+                <button class="header__burger" aria-label="Открыть меню">
+                    <img src="img/burger.svg" alt="">
+                </button>
+                <nav class="header__nav" id="burger-nav" title="Главное меню">
+                    <button class="header__burger-close" aria-label="Закрыть меню">
+                    </button>
+                    <h2 class="nav__title">MENU</h2>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">MAN</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Accessories</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Bags</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Denim</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">T-Shirts</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">WOMAN</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Accessories</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Jackets &amp Coats</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Polos</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">T-Shirts</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Shirts</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">KIDS</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Accessories</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Jackets &amp Coats</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Polos</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">T-Shirts</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Shirts</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Bags</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__profile" href="#">
+                    <img src="img/profile.svg" alt="">
+                </a>
+                <a class="header__basket" href="">
+                    <img src="img/basket.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
 
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__review">
+
+                </div>
+                <div class="footer__subscribe">
+
+                </div>
+            </div>
+            <div class="footer__bottom">
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

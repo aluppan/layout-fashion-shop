@@ -31,11 +31,10 @@
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  padding: 0 15px;
 }
 
 body {
@@ -65,4 +64,34 @@ h3 {
 
 p {
   margin: 0;
+}
+
+.header {
+  background-color: #222;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+.header__logo {
+  margin-right: 41px;
+}
+.header__search {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+.header__burger {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-right: 33px;
+}
+.header__profile {
+  margin-right: 33px;
+}
+.header__nav {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
