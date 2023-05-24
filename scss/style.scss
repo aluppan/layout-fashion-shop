@@ -1,17 +1,19 @@
 @import "fonts";
 @import "variables";
 @import "mixin";
+@import "blocks/header";
+@import "blocks/footer";
 
 * {
     box-sizing: border-box;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    // padding: 0 15px;
+    padding: 0 15px;
 
     // @include lg-1024 {
     //     padding: 0 50px;
@@ -49,43 +51,4 @@ h3 {
 
 p {
     margin: 0;
-}
-
-.header {
-    background-color: $nero-color;
-
-
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 75px;
-        // padding-top: 14px;
-        // padding-bottom: 20px;
-    }
-
-    &__logo {
-        margin-right: 41px;
-    }
-
-    &__search {
-        border: none;
-        cursor: pointer;
-        background: transparent;
-    }
-
-    &__burger {
-        border: none;
-        cursor: pointer;
-        background: transparent;
-        margin-right: 33px;
-    }
-
-    &__profile {
-        margin-right: 33px;
-    }
-
-    &__nav {
-        display: none;
-    }
 }
