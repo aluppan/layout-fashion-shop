@@ -1,0 +1,86 @@
+.footer {
+
+    &__container-top {
+        background-image: url('/img/footer-layer.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        // height: 100%;
+        // object-fit: cover;
+        // width: 100%;
+    }
+
+    &__container-bottom {
+        background-color: $color-black-russian;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        padding: 96px 0 126px 0;
+    }
+
+    &__review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 360px;
+        margin-right: 327px;
+
+        &-text {
+            text-align: center;
+            @include font(20px, 24px);
+            color: $color-black-russian;
+            margin-top: 30px;
+        }
+    }
+
+    &__subscribe {
+        &-title {
+            @include font(18px, 30px);
+            margin-bottom: 32px;
+            max-width: 356px;
+            text-align: center;
+        }
+
+        &-title--bold {
+            display: block;
+            @include font(24px, 40px, 700);
+        }
+
+        &-input {
+            background: $color-gainsboro;
+            border-radius: 16px 0px 0px 16px;
+            height: 49px;
+            width: 256px;
+            border: none;
+            // display: block;
+        }
+
+        &-btn {
+            width: 100px;
+            height: 49px;
+            border: none;
+            cursor: pointer;
+            border-radius: 0 20px 20px 0;
+            background: $color-froly;
+            color: $color-white;
+            @include font(14px, 17px);
+        }
+    }
+
+
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: $black-russian-color;
+        min-height: 79px;
+    }
+
+    &__copy {
+        @include font(16px, 19px);
+        color: $color-snow;
+    }
+}
